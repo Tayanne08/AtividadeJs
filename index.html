@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Validador de Cálculos</title>
+</head>
+<body>
+<h1>Validador de Cálculos</h1>    
+<input type="number" id="num1" placeholder="Primeiro valor"
+style="padding: 5px; width: 100px;">
+<select id="operador" style="padding: 5px;">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="/">/</option>
+    <option value="*">X</option>
+</select>
+<input type="number" id="num2" placeholder="Segundo valor"
+style="padding: 5px; width: 100px;">
+
+<input type="number" id="respostaUsuario" placeholder="Seu resultado"
+style="padding: 5px; width: 100px;">
+<br><br>
+<button onclick="validarResposta()">Validar</button>
+<br><br>
+<h2>Resultado
+    <span id="mensagem"></span>
+</h2>
+
+<script>
+    function validarResposta() {
+        let num1 = parseFloat(document.getElementById('num1').value);
+        let num2 = parseFloat(document.getElementById('num2').value);
+        let operacao = document.getElementById('operador').value;
+        let respostaUsuario = parseFloat(document.getElementById('respostaUsuario'));
+        let resultado
+    }
+
+    switch(operador){
+        case '+':
+            resultado = num1 + num2;
+            break
+        case '-':
+            resultado = num1 - num2;
+            break
+        case '/':
+            resultado = num2 !== 0 ? num1 / num2 : "Erro: Divisão por zero !";
+            break
+        case '*':
+            resultado = num1 * num2;
+            break
+    }
+    document.getElementById("mensagem").innerText = 'Você digitou: ${respostaUsuario}, e o resultado correto é ${'resultado'}';
+</script>
+
+</body>
+</html>

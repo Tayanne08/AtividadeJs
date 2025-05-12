@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média Simples</title>
+
+    <script>
+        function solicitarNota(mensagem){
+            let n;
+            do {
+                n = parseFloat(prompt("Entre com a nota: "));
+            } while (isNaN(n) || n <= 0 || n >= 10);
+        }
+    function calculadoraMedia(){
+        let n1 = parseFloat(prompt("Digite a primeira nota"));
+        let n2 = parseFloat(prompt("Digite a segunda nota"));
+        let n3 = parseFloat(prompt("Digite a terceira nota"));
+        let n4 = parseFloat(prompt("Digite a quarta nota"));
+
+        let media =(n1 + n2 + n3 + n4)/4;
+        alert("a média final é " + media.toFixed(2));
+    }
+</script> 
+</head>
+<body onload="calculadoraMedia()">   
+</body>
+</html>
