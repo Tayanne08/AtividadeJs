@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dias da Semana</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia da Semana</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     
-    <h1>Escolha seu dia da Semana.</h1>
-
-    <div class="semana">
-    <button data-dia="Segunda"=>Segunda 😒</button>
-    <button data-dia="Terça">Terça 🙄</button>
-    <button data-dia="Quarta">Quarta 😮‍💨</button>
-    <button data-dia="Quinta">Quinta 🥱</button>
-    <button data-dia="Sexta">Sexta 🤗</button>
-    <button data-dia="Fim de semana">Fim de semana 🤤</button>
+      <h1>Escolha seu dia da semana</h1>  
+    
+    <div class="buttons-container">
+        <button data-dia="segunda">Segunda</button>
+        <button data-dia="terça">Terça</button>
+        <button data-dia="quarta">Quarta</button>
+        <button data-dia="quinta">Quinta</button>
+        <button data-dia="sexta">Sexta</button>
+        <button data-dia="fim-de-semana">Fim de semana</button>
     </div>
 
-    <script src="script.js"></script>
+    <div id="mensagem" class="mensagem"></div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

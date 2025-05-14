@@ -1,21 +1,46 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 h1{
+    text-align: center;
+    background-color:rgb(243, 150, 210);
+    color: rgb(176, 4, 110);
+    padding: 10px;
+
+}
+
+.buttons-container {
     display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    border: solid;
-    background: #7166c9;
+    justify-content:center;
+    gap:10px;
     
 }
 
-.semana{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+button {
+ 
+    width: 100px;
+    height: 40px;
+    background-color:rgb(243, 150, 210);
+    border-radius: 10px;
+    border-style:hidden;
+    color: rgb(176, 4, 110);
+    font-size: 15px;
+
+    
 }
-button{
-    /* padding: 15px; */
-    width: 100px auto;
-    height: 45px;
-    background: #969ce3;
-    border-radius: 15px;
+
+.mensagem{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgb(71, 1, 44);
+    cursor: pointer;
+    transition: background-color 0.3s
+    
 }
