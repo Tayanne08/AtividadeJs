@@ -1,0 +1,59 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #98718a; /* cor fundo*/
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container_left {
+    margin-right: 20px;
+}
+
+.container_right {
+    max-width: 400px;
+}
+
+.input, .button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input {
+    background-color: #fff;
+    color: #333;
+}
+
+.button {
+    background-color: #de96c5; 
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d11d77; 
+}
+
+#resultado {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
