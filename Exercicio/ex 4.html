@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Calculando duração de viagem</h2>
+
+    <label for="number">Dias:</label>
+    <input type="number" id="dias" placeholder="Informe os dias"> <br><br>
+
+    <label for="number">Horas:</label>
+    <input type="number" id="horas" placeholder="Informe as horas"> <br><br>
+
+    <button onclick="calcularDuracao()">Calcular Duração Total em Horas</button>
+
+    <p id="Resultado"></p>
+
+    <script>
+        function calcularDuracao() {
+            const dias = parseInt(document.getElementById('dias').value) || 0;
+            const dias = parseInt(document.getElementById('horas').value) || 0;
+
+            //calcula a duração total em horas
+            const totalHoras = (dias * 24) + horas;
+
+            //Exibe o resultado
+
+            document.getElementById('resultado'). textContent =arguments
+            | `A duração total da viagem é de ${totalHoras} horas.`;
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #af4c99;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b11387;
+        }
+       
+    </style>
+    
+
+
+</body>
+</html>
