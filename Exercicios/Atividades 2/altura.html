@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Comparar Altura de Duas Pessoas</h2>
+    
+    <label for="altura1">Altura da primeira pessoa (em metros):</label>
+    <input type="number" id="altura1" step="0.01"><br><br>
+
+    <label for="altura2">Altura da segunda pessoa (em metros):</label>
+    <input type="number" id="altura2" step="0.01"><br><br>
+
+    <button onclick="compararAlturas()">Comparar</button>
+
+    <p id="resultado"></p>
+
+
+    <script>
+            function compararAlturas() {
+            // Obtém os valores dos campos de entrada
+            var altura1 = parseFloat(document.getElementById("altura1").value);
+            var altura2 = parseFloat(document.getElementById("altura2").value);
+            var resultado = document.getElementById("resultado");
+
+            // Verifica se os valores são válidos
+            if (isNaN(altura1) || isNaN(altura2) || altura1 <= 0 || altura2 <= 0) {
+                resultado.innerText = "Por favor, insira alturas válidas (números positivos).";
+                return;
+            }
+
+            // Compara as alturas
+            if (altura1 > altura2) {
+                resultado.innerText = "A primeira pessoa é mais alta.";
+            } else if (altura2 > altura1) {
+                resultado.innerText = "A segunda pessoa é mais alta.";
+            } else {
+                resultado.innerText = "As duas pessoas têm a mesma altura.";
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #da31c6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8e0469;
+        }
+       
+    </style>
+
+</body>
+</html>

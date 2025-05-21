@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        let selecao = prompt("Qual será a operação a ser realizada: (+, -, *, /)");
+        let numero1 = parseInt(prompt("Coloque o primeiro numero."));
+        let numero2 = parseInt(prompt("Coloque o segundo numero."));
+        let resultado = "";
+
+        switch (selecao) {
+            case '+':
+                resultado = numero1 + numero2;
+                break
+            case '-':
+                resultado = numero1 + numero2;
+                break
+            case '*':
+                resultado = numero1 + numero2;
+                break
+            case '/':
+                resultado = numero1 + numero2;
+                break
+            default:
+                alert("Você não selecionou uma opção válida")
+        }
+        alert("Seu resultado é " + resultado);
+    </script>
+</body>
+</html>
