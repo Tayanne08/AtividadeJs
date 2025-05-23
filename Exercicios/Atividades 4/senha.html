@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha correta</title>
+</head>
+<body>
+    <script>
+        // Define a senha correta
+    const senhaCorreta = "JS123";
+
+// Inicia um loop que vai continuar até a senha ser digitada corretamente
+    let senha = "";
+        while (senha !== senhaCorreta) {
+    // Pede para o usuário digitar a senha
+        senha = prompt("Digite a senha:");
+
+    // Exibe mensagem de erro caso a senha não seja correta
+        alert(senha === senhaCorreta ? "Acesso concedido" : "Senha incorreta, tente novamente.");
+}
+    </script>
+
+    
+</body>
+</html>

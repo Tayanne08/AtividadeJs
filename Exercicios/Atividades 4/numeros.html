@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 10 numeros</title>
+</head>
+<body>
+    <script>
+        let pares = 0; // Começa com o zero números pares
+
+        for (let i = 1; i <= 10; i++) {
+            let numero = parseInt(prompt("Digite o numero  " + i +" de 10"));
+            
+        //Verifica se o número é par
+            if (numero % 2 ===0) {
+                pares++; // Soma 1 se for par
+            }
+            }
+            alert (" Você digitou " + pares + " numeros pares.");
+
+        
+    </script>
+</body>
+</html>
