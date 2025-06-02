@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letra Maiuscula</title>
+</head>
+<body>
+    <script>
+
+  // Função que deixa a primeira letra em maiúscula
+  function primeiraMaiuscula(texto) {
+    // charAt(0) pega a primeira letra da palavra
+    // toUpperCase() transforma essa letra em maiúscula
+    let letraMaiuscula = texto.charAt(0).toUpperCase();
+
+    // slice(1) pega o restante da palavra, a partir da segunda letra
+    let resto = texto.slice(1);
+
+    // Juntamos a letra maiúscula com o resto da palavra
+    return letraMaiuscula + resto;
+  }
+
+  // Mostra uma caixa para o usuário digitar uma palavra
+  let palavra = prompt("Digite uma palavra:");
+
+  // Chama a função para transformar a primeira letra
+  let resultado = primeiraMaiuscula(palavra);
+
+  // Mostra o resultado no console do navegador
+  console.log(resultado);
+
+  // Mostra o resultado em uma janela de alerta
+  alert("Resultado: " + resultado);
+</script>
+
+    
+</body>
+</html>
