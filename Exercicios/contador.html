@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Interativo</title>
+</head>
+<body>
+    <h1>Contador Iterativo</h1>
+    <div>
+        <button id="Decrementar">-</button>
+        <span id="Contador">0</span>
+        <button id="Incrementar">+</button>
+    </div>
+
+    <script>
+        let Contador = 0
+        function atualizarContador(){
+            alert('Contador: ${contador}');
+        }
+        function Incrementar(){
+            contador ++;
+            atualizarContador();
+        }
+
+        function Decrementar(){
+            contador --;
+            atualizarContador
+        }
+
+        while (true){
+            let acao = prompt("Digite '+' para incrementar, '-' para decrementar ou 'sair' para encerrar.");
+
+            if(acao ==='+'){
+                Incrementar();
+            } else if (acao === '-'){
+                Decrementar()
+            } else if (acao?.toLocaleLowerCase()==='sair'){
+                break;
+            } else{
+                alert("Opção inválida!");
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>
