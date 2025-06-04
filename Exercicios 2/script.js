@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
       botaoExcluir.addEventListener('click', () => {
         gerenciador.removerTarefa(tarefa.id);
         atualizarInterface();
+        
       });
 
       li.appendChild(checkbox);
